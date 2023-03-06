@@ -189,3 +189,9 @@ bar {
 
 # Dont allow mouse focus changes
 focus_follows_mouse no
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #333333 #5f676a #ffffff #484e50   #5f676a
+client.focused_inactive #1a1619 #252024 #a9b7c6 #2e9ef4   #1a1619
+client.unfocused        #1a1619 #252024 #a9b7c6 #2e9ef4   #1a1619
+
