@@ -5,6 +5,6 @@ and configured from there
 
 # Random Req's
 
-nvim package manager (packer)[https://github.com/wbthomason/packer.nvim] requires manual installation
+nvim package manager [packer](https://github.com/wbthomason/packer.nvim) requires manual installation
 
-nvim formatting uses (prettierd)[https://github.com/fsouza/prettierd] Need manual installing
+nvim formatting uses [prettierd](https://github.com/fsouza/prettierd) Need manual installing
