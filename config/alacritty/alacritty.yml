@@ -1,0 +1,18 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+#
+import:
+  - ~/.alacritty-colorscheme/themes/darcula.yaml
+font:
+  normal:
+    family: Ubuntu Mono derivative Powerline
+    style: Regular
+  bold:
+    family: Ubuntu Mono derivative Powerline
+    style: Bold
+  italic:
+    family: Ubuntu Mono derivative Powerline
+    style: Italic
+  bold_italic:
+    family: Ubuntu Mono derivative Powerline
+    style: Bold Italic
+  size: 12
