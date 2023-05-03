@@ -12,6 +12,7 @@ return require('packer').startup(function(use)
   use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+  use('nvim-treesitter/nvim-treesitter-context')
 
   use("theprimeagen/harpoon")
 
@@ -40,7 +41,7 @@ return require('packer').startup(function(use)
 
       -- Snippets
       { 'L3MON4D3/LuaSnip' },             -- Required
-      { 'rafamadriz/friendly-snippets' }, -- Optional
+ --     { 'rafamadriz/friendly-snippets' }, -- Optional
     }
   }
 
@@ -53,4 +54,9 @@ return require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
+
+  use {
+    'laytan/cloak.nvim'
+  }
+
 end)

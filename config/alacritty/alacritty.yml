@@ -4,15 +4,15 @@ import:
   - ~/.alacritty-colorscheme/themes/darcula.yaml
 font:
   normal:
-    family: Ubuntu Mono derivative Powerline
+    family: UbuntuMono Nerd Font
     style: Regular
   bold:
-    family: Ubuntu Mono derivative Powerline
+    family: UbuntuMono Nerd Font
     style: Bold
   italic:
-    family: Ubuntu Mono derivative Powerline
+    family: UbuntuMono Nerd Font
     style: Italic
   bold_italic:
-    family: Ubuntu Mono derivative Powerline
+    family: UbuntuMono Nerd Font
     style: Bold Italic
-  size: 12
+  size: 15

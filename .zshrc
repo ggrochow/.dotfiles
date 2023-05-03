@@ -71,10 +71,8 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-# autostart tmux
-ZSH_TMUX_CONIG=$HOME/.config/tmux/tmux.conf
-
-plugins=(git tmux)
+plugins=(git)
+# Plugin config has to be between here and source
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,13 +102,31 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# tmux autostart and sessionizer
-
+# tmux sessionizer
 bindkey -s ^f "~/dev/.dotfiles/bin/.local/scripts/tmux-sessionizer\n"
 
 alias vi="nvim"
 alias vim="nvim"
+alias pn="pnpm"
 
 # fnm
 export PATH="/home/graham/.local/share/fnm:$PATH"
 eval "`fnm env`"
+
+# pnpm
+export PNPM_HOME="/home/graham/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+#exercism
+export PATH="/home/graham/bin:$PATH"
+
+# bun completions
+[ -s "/home/graham/.bun/_bun" ] && source "/home/graham/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
