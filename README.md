@@ -7,4 +7,9 @@ and configured from there
 
 nvim package manager [packer](https://github.com/wbthomason/packer.nvim) requires manual installation
 
-nvim formatting uses [prettierd](https://github.com/fsouza/prettierd) Need manual installing
+bins our various plugins need
+
+[ripgrep](https://github.com/BurntSushi/ripgrep)
+[fd](https://github.com/sharkdp/fd)
+[fzf](https://github.com/junegunn/fzf)
+
