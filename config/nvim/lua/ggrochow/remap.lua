@@ -29,7 +29,8 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
 
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+-- set in neoformat
+-- vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 -- quickfix nav
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
